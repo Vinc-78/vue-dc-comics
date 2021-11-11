@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <header><Header></Header></header>
+    <main><Main></Main></main>
+    
 
     
   </div>
@@ -9,11 +11,14 @@
 <script>
 
 import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
+
 export default {
   name: 'App',
   components: {
 
     Header,
+    Main,
     
   }
 }
@@ -24,7 +29,9 @@ export default {
 @import "styles/Variables";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+
   
   
 }
+
 </style>

@@ -1,5 +1,7 @@
 <template>
+
   <div class="container">
+      
     <div class="logo"><img src="../assets/img/dc-logo.png" alt="" /></div>
     <div class="nav">
       <ul>
