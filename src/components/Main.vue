@@ -16,7 +16,7 @@ export default {
 @import "../styles/Variables.scss";
 
 .containerMain {
-  padding: $padding;
+  padding: $padding * 4.5;
   width: 960px;
   margin: auto;
 

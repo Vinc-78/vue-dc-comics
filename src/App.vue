@@ -2,10 +2,8 @@
   <div id="app">
     <header><Header></Header></header>
     <main><Main></Main></main>
-    <footer> <BluLine></BluLine> </footer>
-    
-    
-
+    <footer> <Footer></Footer> </footer>
+  
     
   </div>
 </template>
@@ -14,7 +12,7 @@
 
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
-import BluLine from "./components/BluLine.vue"
+import Footer from "./components/Footer.vue"
 
 
 export default {
@@ -23,7 +21,8 @@ export default {
 
     Header,
     Main,
-    BluLine,
+    Footer
+    
     
     
   }

@@ -52,12 +52,13 @@ export default {
 @import "../styles/Variables.scss";
 
 .containerBlu {
-  width: 960px;
+  width: 980px;
   margin: auto;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 
   .img {
     width: 65px;
