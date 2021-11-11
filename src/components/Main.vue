@@ -1,7 +1,7 @@
 <template>
   <div class="shell">
-    <div class="container">
-      <div class="h1">-->Content Goes Here >--</div>
+    <div class="containerMain">
+      <div class="h1">-- Content Goes Here --</div>
     </div>
   </div>
 </template>
@@ -12,19 +12,20 @@ export default {
 };
 </script>
 
-<style scoped lang="scss" >
+<style  lang="scss" >
 @import "../styles/Variables.scss";
 
-
-.container {
+.containerMain {
   padding: $padding;
+  width: 960px;
+  margin: auto;
 
   color: white;
 }
 
 .shell {
-    background-color: $dark;
-    padding: $padding;
+  background-color: $dark;
+  padding: $padding;
 }
 </style>
 

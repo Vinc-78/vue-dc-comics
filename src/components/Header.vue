@@ -1,7 +1,5 @@
 <template>
-
-  <div class="container">
-
+  <div class="containerHeader">
     <div class="logo"><img src="../assets/img/dc-logo.png" alt="" /></div>
     <div class="nav">
       <ul>
@@ -35,10 +33,12 @@ export default {
 </script>
 
 
-<style scoped lang="scss">
+<style  lang="scss">
 @import "../styles/Variables.scss";
 
-.container {
+.containerHeader {
+  width: 960px;
+  margin: auto;
   padding: $padding;
   display: flex;
   justify-content: space-between;
@@ -51,6 +51,7 @@ export default {
   li {
     display: inline-block;
     margin: 15px;
+    position: relative;
 
     a {
       color: rgb(70, 85, 111);
@@ -60,9 +61,15 @@ export default {
 
     a:hover {
       color: $celestino;
-
-      &::after{ width: 15px;
-                background-color: $celestino;}
+    }
+    &:hover::after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      width: 35px;
+      height: 5px;
+      background-color: #0282f9;
     }
   }
 }

@@ -2,6 +2,8 @@
   <div id="app">
     <header><Header></Header></header>
     <main><Main></Main></main>
+    <footer> <BluLine></BluLine> </footer>
+    
     
 
     
@@ -12,6 +14,8 @@
 
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
+import BluLine from "./components/BluLine.vue"
+
 
 export default {
   name: 'App',
@@ -19,6 +23,8 @@ export default {
 
     Header,
     Main,
+    BluLine,
+    
     
   }
 }
@@ -32,8 +38,6 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  
   
 }
 
