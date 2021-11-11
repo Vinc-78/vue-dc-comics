@@ -1,7 +1,7 @@
 <template>
 
   <div class="container">
-      
+
     <div class="logo"><img src="../assets/img/dc-logo.png" alt="" /></div>
     <div class="nav">
       <ul>
@@ -35,7 +35,7 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 @import "../styles/Variables.scss";
 
 .container {
@@ -55,6 +55,7 @@ export default {
     a {
       color: rgb(70, 85, 111);
       text-decoration: none;
+      font-weight: bold;
     }
 
     a:hover {

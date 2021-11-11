@@ -12,8 +12,9 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss" >
 @import "../styles/Variables.scss";
+
 
 .container {
   padding: $padding;
@@ -23,6 +24,7 @@ export default {
 
 .shell {
     background-color: $dark;
+    padding: $padding;
 }
 </style>
 
