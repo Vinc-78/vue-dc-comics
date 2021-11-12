@@ -53,12 +53,9 @@
             </div>
             <div class="navSocial-right">
                 <span>FOLLOW US</span>
-                <ul>
-                    <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="face"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="twit"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="tube"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="tube"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="tube"></a></li>
+                <ul v-for="(element, i) in socialArray" :key="i">
+                    <li><a href="#"><img v-bind:src="require('@/assets/img/'+ element)" alt="face"></a></li>
+                    
                 </ul>
             
             </div>
@@ -84,7 +81,8 @@ export default {
       comicsArray:["Characters","Comics","Movies","TV","Games","Videos","News"],
       shopArray:["Shop DC","Shop DC Collectibles"],
       dcArrat:["Terms Of Use","Privacy policy(New)","Ad Choices","Advertising","Jobs","Subscriptions","Talent Workshops","CPSC Certificates","Ratings","Shop Help","Contact Us"],
-      sitesArray:["DC","MAD Magazine","DC Kids","DC Universe","DC Power Visa"]
+      sitesArray:["DC","MAD Magazine","DC Kids","DC Universe","DC Power Visa"],
+      socialArray:["footer-facebook.png","footer-twitter.png","footer-youtube.png","footer-pinterest.png","footer-periscope.png"]
       }},
 
   components: {
