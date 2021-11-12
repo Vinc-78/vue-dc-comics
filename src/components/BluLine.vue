@@ -67,9 +67,10 @@ export default {
     vertical-align: middle;
 
     img {
-      object-fit: cover;
-      width: 60%;
-    }
+        object-fit: contain;
+        height: 40px;
+        width: 40px;
+        }
   }
 
   ul {
