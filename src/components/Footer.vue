@@ -175,6 +175,7 @@ export default {
                      
                       
                       ul{display: inline-block;
+                         margin-left: -45px;
                       
                         li{list-style: none;
                            display: inline-block;
